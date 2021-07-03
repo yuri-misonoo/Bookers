@@ -3,5 +3,5 @@
 <h4>Body:</h4>
   <p><%= @book.body %></p>
 
-<span><%= link_to "edit", edit_book_path %></span>
+<span><%= link_to "edit", edit_book_path(@book.id) %></span>
 <span><%= link_to "back", :back %></span>
