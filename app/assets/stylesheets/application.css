@@ -125,4 +125,15 @@ td{
   padding: 0 10px
 }
 
+.field_with_errors{
+  background-color: #fcc;
+  width: 20%;
+}
 
+.error-message{
+  color: red;
+}
+
+.error-message-field{
+  font-size: 20px
+}

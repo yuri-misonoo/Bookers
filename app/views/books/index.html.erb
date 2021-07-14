@@ -28,18 +28,18 @@
 
   <% if @book.errors.any? %>
     <% @book.errors.full_messages.each do |message| %>
-      <%= message %>
+      <div class="error-message"><%= message %></div>
     <% end %>
   <% end %>
-  
+
   <%= form_with model:@book, local:true do |f| %>
-  
+
    <h4>Title</h4>
    <span><%= f.text_field :title %></span>
-  
+
    <h4>Body</h4>
    <span><%= f.text_area :body %></span>
-  
+
    <span class="create-button"><%= f.submit 'Create Book' %></span>
   </div>
   <% end %>
